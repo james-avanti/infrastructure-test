@@ -1,11 +1,7 @@
 
-provider "azurerm" {
+provider "azurerm"
 
-}
-
-
-resoruce "azurerm_resource_group" "rg"{
-
+  resoruce "azurerm_resource_group" "rg"{
   name = "JamesRG"
   location "Canada Central"
 }
