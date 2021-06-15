@@ -6,7 +6,7 @@ module "windowsservers" {
   admin_password      = "ComplxP@ssw0rd!"
   vm_os_simple        = "WindowsServer"
   public_ip_dns       = ["winsimplevmips"] // change to a unique name per datacenter region
-  managed_disk_type   = Standard_LRS
+  managed_disk_type   = "Standard_LRS"
   vnet_subnet_id      = module.network.vnet_subnets[0]
   boot_diagnostics    = true
   vm_size             = "Standard_D16s_v3"
